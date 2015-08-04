@@ -11,16 +11,6 @@ UNIVERSAL
   @include outer-container(1200px);
 }
 
-.col-1 {
-  @include span-columns(4);
-}
-.col-2 {
-  @include span-columns(4);
-}
-.col-3 {
-  @include span-columns(4);
-  @include omega();
-}
 
 /*==========================================
 HEADER
