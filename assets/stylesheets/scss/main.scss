@@ -2,6 +2,7 @@
 @import '../../../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../../../bower_components/neat/app/assets/stylesheets/neat';
 
+
 /*==========================================
 COLORS
 ==========================================*/
@@ -223,8 +224,33 @@ FEATURES SECTION
   margin-bottom: 0.3em;
 }
 
-
-
 /*==========================================
 FOOTER
 ==========================================*/
+
+footer {
+  @include span-columns(12);
+  background: $footer-gray;
+  color: $footer-blue;
+  padding-top: 2em;
+}
+
+.footer-location-container {
+  padding: 1em;
+}
+
+.location-heading {
+  color: $heading-pink;
+  margin-bottom: 1em;
+}
+
+.location-text {
+  line-height: 1.2em;
+}
+
+.location-contact {
+  margin-top: 1em;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+}

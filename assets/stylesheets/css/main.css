@@ -257,3 +257,29 @@ FEATURES SECTION
 /*==========================================
 FOOTER
 ==========================================*/
+footer {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background: #E2E2E2;
+  color: #7B92A9;
+  padding-top: 2em; }
+  footer:last-child {
+    margin-right: 0; }
+
+.footer-location-container {
+  padding: 1em; }
+
+.location-heading {
+  color: #DF2973;
+  margin-bottom: 1em; }
+
+.location-text {
+  line-height: 1.2em; }
+
+.location-contact {
+  margin-top: 1em;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase; }
