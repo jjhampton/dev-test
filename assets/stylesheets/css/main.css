@@ -264,18 +264,26 @@ footer {
   width: 100%;
   background: #E2E2E2;
   color: #7B92A9;
-  padding-top: 2em; }
+  padding-top: 2em;
+  padding-bottom: 2em; }
   footer:last-child {
     margin-right: 0; }
 
 .footer-location-container {
-  padding: 1em; }
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-bottom: 1em; }
+
+.footer-nav {
+  margin-bottom: 1em; }
 
 .location-heading {
   color: #DF2973;
-  margin-bottom: 1em; }
+  font-size: 1.2em;
+  margin-bottom: 0.7em; }
 
 .location-text {
+  font-size: 1.2em;
   line-height: 1.2em; }
 
 .location-contact {
@@ -283,3 +291,11 @@ footer {
   font-size: 0.8em;
   font-weight: bold;
   text-transform: uppercase; }
+
+.footer-social-icon {
+  padding-right: 0.7em; }
+
+.copyright {
+  font-size: 0.8em;
+  padding-left: 2em;
+  padding-right: 2em; }
