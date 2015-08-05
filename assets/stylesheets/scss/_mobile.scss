@@ -16,16 +16,16 @@ UNIVERSAL / BODY
 
 img {max-width:100%;}
 
-.hidden {
-  display: none;
-}
-
 /*==========================================
 HEADER
 ==========================================*/
 
 .hero-nav {
   height: 30px;
+}
+
+.hero-nav-brand {
+  display: none;
 }
 
 .hero-nav-options {
@@ -130,7 +130,6 @@ FEATURES SECTION
 
 .feature,
 .features-intro {
-  @include span-columns(12);
   background-color: $features-lily-white;
   padding: 1em;
 }
@@ -224,7 +223,7 @@ footer {
 }
 
 .location-text {
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.2em;
 }
 
