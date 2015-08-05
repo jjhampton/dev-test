@@ -132,6 +132,7 @@ header {
   background-color: $button-orange;
   border: none;
   text-transform: uppercase;
+  font-weight: bold;
   padding-left: 2em;
   padding-right: 2em;
   background: -webkit-linear-gradient(top left, $button-orange, $button-gradient-pink);
@@ -142,8 +143,22 @@ header {
 }
 
 /*==========================================
-BODY
+FEATURES SECTION
 ==========================================*/
+
+.feature-image {
+  height: 177px;
+  width: 177px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+.feature-image-border {
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+
 
 /*==========================================
 FOOTER

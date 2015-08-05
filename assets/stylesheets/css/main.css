@@ -158,6 +158,7 @@ header {
   background-color: #F6941E;
   border: none;
   text-transform: uppercase;
+  font-weight: bold;
   padding-left: 2em;
   padding-right: 2em;
   background: -webkit-linear-gradient(top left, #F6941E, #F44481);
@@ -167,8 +168,18 @@ header {
   background: linear-gradient(to bottom right, #F6941E, #F44481); }
 
 /*==========================================
-BODY
+FEATURES SECTION
 ==========================================*/
+.feature-image {
+  height: 177px;
+  width: 177px;
+  border: 5px solid #fff;
+  border-radius: 50%; }
+
+.feature-image-border {
+  border: 5px solid #fff;
+  border-radius: 50%; }
+
 /*==========================================
 FOOTER
 ==========================================*/
