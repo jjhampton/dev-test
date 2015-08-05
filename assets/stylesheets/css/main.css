@@ -149,7 +149,8 @@ header {
 .invite-input {
   height: 40px;
   border: none;
-  padding-left: 0.3em; }
+  padding-left: 0.3em;
+  width: 60%; }
 
 .invite-button {
   float: right;
@@ -319,7 +320,7 @@ footer {
     padding-top: 2em; }
   .features-intro {
     position: relative;
-    top: 3em; }
+    top: 5em; }
   .feature,
   .features-intro {
     float: left;
@@ -334,6 +335,74 @@ footer {
       margin-right: 0; }
     .feature:nth-child(2n+1),
     .features-intro:nth-child(2n+1) {
+      clear: left; }
+  .footer-location-container {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .footer-location-container:last-child {
+      margin-right: 0; }
+    .footer-location-container:nth-child(3n) {
+      margin-right: 0; }
+    .footer-location-container:nth-child(3n+1) {
+      clear: left; }
+  .footer-nav {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 46.28851%; }
+    .footer-nav:last-child {
+      margin-right: 0; }
+    .footer-nav:nth-child(2n) {
+      margin-right: 0; }
+    .footer-nav:nth-child(2n+1) {
+      clear: left; }
+  .copyright-container {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .copyright-container:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 1200px) {
+  .hero-heading {
+    font-size: 3em; }
+  .hero-text {
+    padding-left: 24em;
+    padding-right: 24em; }
+  .hero-nav-brand {
+    display: inline-block; }
+  .header-logo-brand {
+    display: none; }
+  .invite-form {
+    margin-left: 24em;
+    margin-right: 24em; }
+  .features-section {
+    padding-left: 2em;
+    padding-right: 2em; }
+  footer {
+    padding-left: 1em; }
+  .features-section {
+    padding-top: 2em; }
+  .features-intro {
+    position: relative;
+    top: 5em; }
+  .feature,
+  .features-intro {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .feature:last-child,
+    .features-intro:last-child {
+      margin-right: 0; }
+    .feature:nth-child(3n),
+    .features-intro:nth-child(3n) {
+      margin-right: 0; }
+    .feature:nth-child(3n+1),
+    .features-intro:nth-child(3n+1) {
       clear: left; }
   .footer-location-container {
     float: left;
