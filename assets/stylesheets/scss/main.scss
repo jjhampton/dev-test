@@ -15,6 +15,15 @@ $footer-blue-darker: #416589; /* may need for bold text? or social icons */
 
 
 /*==========================================
+MEDIA-BREAKPOINTS
+==========================================*/
+
+$mobile: new-breakpoint(min-width 320px max-width 549px);
+$tablet: new-breakpoint(min-width 550px max-width 799px);
+$laptop: new-breakpoint(min-width 800px max-width 1199px);
+$desktop: new-breakpoint(min-width 1200px);
+
+/*==========================================
 UNIVERSAL
 ==========================================*/
 
@@ -22,6 +31,7 @@ UNIVERSAL
   @include outer-container(1200px);
 }
 
+img {max-width:100;}
 
 /*==========================================
 HEADER

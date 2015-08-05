@@ -57,6 +57,9 @@ COLORS
 /*feature-headers & footer-headers*/
 /* may need for bold text? or social icons */
 /*==========================================
+MEDIA-BREAKPOINTS
+==========================================*/
+/*==========================================
 UNIVERSAL
 ==========================================*/
 .main-container {
@@ -67,6 +70,9 @@ UNIVERSAL
     clear: both;
     content: "";
     display: table; }
+
+img {
+  max-width: 100; }
 
 /*==========================================
 HEADER
