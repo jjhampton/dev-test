@@ -11,6 +11,7 @@ $button-gradient-pink: #F44481;
 $features-app-purple: #420B4D;
 $heading-pink: #DF2973; /*feature-headers & footer-headers*/
 $base-text-color: #848484;
+$footer-gray: #E2E2E2;
 $footer-blue: #7B92A9;
 $footer-blue-darker: #416589; /* may need for bold text? or social icons */
 $features-lily-white: #EBEBEB;
@@ -186,6 +187,7 @@ FEATURES SECTION
 
 .feature-image-container {
   text-align: center;
+  margin-bottom: 2em;
 }
 
 .feature-image {
@@ -213,6 +215,12 @@ FEATURES SECTION
   -moz-box-shadow: 1px 1px 1px #D9D5D5;
   -webkit-box-shadow: 1px 1px 1px #D9D5D5;
   box-shadow: 1px 1px 1px #D9D5D5;
+}
+
+.feature-heading {
+  color: $heading-pink;
+  font-size: 1.2em;
+  margin-bottom: 0.3em;
 }
 
 
