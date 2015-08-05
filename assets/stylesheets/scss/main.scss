@@ -13,6 +13,7 @@ $heading-pink: #DF2973; /*feature-headers & footer-headers*/
 $base-text-color: #848484;
 $footer-blue: #7B92A9;
 $footer-blue-darker: #416589; /* may need for bold text? or social icons */
+$features-lily-white: #EBEBEB;
 
 /*==========================================
 MIXINS
@@ -27,8 +28,8 @@ MIXINS
 MEDIA-BREAKPOINTS
 ==========================================*/
 
-/* $mobile: new-breakpoint(min-width 320px max-width 549px);
- */$tablet: new-breakpoint(min-width 550px max-width 799px);
+/* $mobile: new-breakpoint(min-width 320px max-width 549px); */
+$tablet: new-breakpoint(min-width 550px max-width 799px);
 $laptop: new-breakpoint(min-width 800px max-width 1199px);
 $desktop: new-breakpoint(min-width 1200px);
 
@@ -51,6 +52,7 @@ HEADER
 ==========================================*/
 
 .hero-nav {
+  @include span-columns(12);
   height: 30px;
 }
 
@@ -61,6 +63,7 @@ HEADER
 }
 
 header {
+  @include span-columns(12);
   height: 502px;
   background-image: url('../../images/header-background-min.png');
   background-position: center;
@@ -127,6 +130,7 @@ header {
 .invite-button {
   float: right;
   position: relative;
+  max-width: 40%;
   height: 40px;
   color: #fff;
   background-color: $button-orange;
@@ -146,16 +150,69 @@ header {
 FEATURES SECTION
 ==========================================*/
 
+.features-section {
+  @include span-columns(12);
+  background-color: $features-lily-white;
+}
+
+.feature,
+.features-intro {
+  @include span-columns(12);
+  background-color: $features-lily-white;
+  padding: 1em;
+}
+
+.features-intro-heading {
+  color: $features-app-purple;
+  font-size: 3em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.features-intro-text,
+.feature-text-container {
+  color: $base-text-color;
+  background-color: $features-lily-white;
+}
+
+.features-intro-text {
+  font-style: italic;
+  line-height: 1.2em;
+}
+
+.feature-text {
+  line-height: 1.2em;
+}
+
+.feature-image-container {
+  text-align: center;
+}
+
 .feature-image {
+  position: relative;
+  z-index: 2;
   height: 177px;
   width: 177px;
   border: 5px solid #fff;
   border-radius: 50%;
+  -moz-box-shadow: 1px 2px 2px #D9D5D5;
+  -webkit-box-shadow: 1px 2px 2px #D9D5D5;
+  box-shadow: 1px 2px 2px #D9D5D5;
 }
 
 .feature-image-border {
   border: 5px solid #fff;
   border-radius: 50%;
+}
+
+.feature-image-circle {
+  position: relative;
+  left: -2.2em;
+  z-index: 1;
+  border-radius: 50%;
+  -moz-box-shadow: 1px 1px 1px #D9D5D5;
+  -webkit-box-shadow: 1px 1px 1px #D9D5D5;
+  box-shadow: 1px 1px 1px #D9D5D5;
 }
 
 
