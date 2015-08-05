@@ -7,6 +7,7 @@ COLORS
 ==========================================*/
 $nav-bright-red: #FB2C59;
 $button-orange: #F6941E;
+$button-gradient-pink: #F44481;
 $features-app-purple: #420B4D;
 $heading-pink: #DF2973; /*feature-headers & footer-headers*/
 $base-text-color: #848484;
@@ -56,8 +57,7 @@ HEADER
 .hero-nav-options {
   float: right;
   color: $nav-bright-red;
-  margin-top: 20px;
-  padding-right: 20px;
+  padding-right: 1em;
 }
 
 header {
@@ -72,21 +72,22 @@ header {
 .header-logo {
   display: block;
   height: 52px;
-  margin-top: 2em;
+  margin-top: 0.5em;
   @include block-center;
+  margin-bottom: 1em;
 }
 
 .header-logo-brand {
   display: block;
   @include block-center;
-  margin-bottom: 0.8em;
+  margin-bottom: 2em;
 }
 
 .hero-heading {
   color: #fff;
   text-align: center;
   font-size: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 0.5em;
 }
 
 .hero-text {
@@ -107,9 +108,37 @@ header {
   text-align: center;
 }
 
+.invite-text-last {
+  margin-bottom: 1.7em;
+}
+
 .invite-form {
-  height: 50px;
-  text-align: center;
+  background-color: #fff;
+  @include block-center;
+  padding: 0.3em;
+}
+
+.invite-input {
+  height: 40px;
+  border: none;
+  padding-left: 0.3em;
+}
+
+.invite-button {
+  float: right;
+  position: relative;
+  height: 40px;
+  color: #fff;
+  background-color: $button-orange;
+  border: none;
+  text-transform: uppercase;
+  padding-left: 2em;
+  padding-right: 2em;
+  background: -webkit-linear-gradient(top left, $button-orange, $button-gradient-pink);
+  background:    -moz-linear-gradient(top left, $button-orange, $button-gradient-pink);
+  background:      -o-linear-gradient(top left, $button-orange, $button-gradient-pink);
+  background:     -ms-linear-gradient(top left, $button-orange, $button-gradient-pink);
+  background:         linear-gradient(to bottom right, $button-orange, $button-gradient-pink);
 }
 
 /*==========================================
