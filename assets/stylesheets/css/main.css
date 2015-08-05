@@ -81,13 +81,7 @@ img {
 HEADER
 ==========================================*/
 .hero-nav {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
   height: 30px; }
-  .hero-nav:last-child {
-    margin-right: 0; }
 
 .hero-nav-options {
   float: right;
@@ -298,5 +292,14 @@ footer {
   padding-right: 2em; }
 
 @media screen and (min-width: 550px) and (max-width: 799px) {
-  .features-intro-heading {
-    color: red; } }
+  .hero-text {
+    padding-left: 2em;
+    padding-right: 2em; }
+  .invite-form {
+    margin-left: 2em;
+    margin-right: 2em; }
+  .features-section {
+    padding-left: 2em;
+    padding-right: 2em; }
+  footer {
+    padding-left: 1em; } }
