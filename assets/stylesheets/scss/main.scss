@@ -2,6 +2,17 @@
 @import '../../../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../../../bower_components/neat/app/assets/stylesheets/neat';
 
+/*==========================================
+COLORS
+==========================================*/
+$nav-bright-red: #FB2C59;
+$button-orange: #F6941E;
+$features-app-purple: #420B4D;
+$heading-pink: #DF2973; /*feature-headers & footer-headers*/
+$base-text-color: #848484;
+$footer-blue: #7B92A9;
+$footer-blue-darker: #416589; /* may need for bold text? or social icons */
+
 
 /*==========================================
 UNIVERSAL
@@ -11,16 +22,6 @@ UNIVERSAL
   @include outer-container(1200px);
 }
 
-.col-1 {
-  @include span-columns(4);
-}
-.col-2 {
-  @include span-columns(4);
-}
-.col-3 {
-  @include span-columns(4);
-  @include omega();
-}
 
 /*==========================================
 HEADER
