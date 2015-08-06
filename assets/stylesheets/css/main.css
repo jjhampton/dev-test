@@ -462,9 +462,12 @@ footer {
     padding-left: 2em;
     padding-right: 2em; }
   footer {
-    padding-left: 1em; }
+    padding-left: 25em;
+    padding-right: 25em; }
   .features-section {
-    padding-top: 2em; }
+    padding-top: 2em;
+    padding-left: 25em;
+    padding-right: 25em; }
   .features-intro {
     position: relative;
     top: 5em; }
