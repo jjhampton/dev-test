@@ -147,7 +147,7 @@ header {
   position: relative;
   max-width: 40%;
   height: 40px;
-  border-radius: 5%;
+  border-radius: 4px;
   color: #fff;
   background-color: #F6941E;
   border: none;

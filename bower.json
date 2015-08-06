@@ -18,6 +18,7 @@
     "neat": "~1.7.2",
     "bourbon": "~4.2.3",
     "reset-css": "~2.0.2011012602",
-    "font-awesome": "~4.4.0"
+    "font-awesome": "~4.4.0",
+    "jquery": "~2.1.4"
   }
 }
