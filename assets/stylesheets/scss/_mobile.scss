@@ -231,6 +231,7 @@ FEATURES SECTION
 }
 
 .feature-image {
+  display: inline-block;
   position: relative;
   z-index: 2;
   height: 177px;
@@ -240,11 +241,53 @@ FEATURES SECTION
   -moz-box-shadow: 1px 2px 2px #D9D5D5;
   -webkit-box-shadow: 1px 2px 2px #D9D5D5;
   box-shadow: 1px 2px 2px #D9D5D5;
+  background-position: center;
 }
 
-.feature-image-border {
-  border: 5px solid #fff;
+.feature-image1 {
+  background-image: url("../../images/audience-feature.png");
+}
+
+.feature-image2 {
+  background-image: url("../../images/persona-feature.png");
+}
+
+.feature-image3 {
+  background-image: url("../../images/engagement-feature.png");
+}
+
+.feature-image4 {
+  background-image: url("../../images/social-feature.png");
+}
+
+.feature-image5 {
+  background-image: url("../../images/sentiment-feature.png");
+}
+
+.feature-image-stripes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
+}
+
+.hover-text {
+  position: relative;
+  top: 40%;
+  display: none;
+  color: #fff;
+}
+
+.feature-image-stripes:hover > span.hover-text {
+  display: inline;
+}
+
+.feature-image:hover > div.feature-image-stripes {
+  background-color: rgba(0, 0, 0, 0.2);
+  background-size: 10em;
+  background-image: repeating-linear-gradient(-45deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2) 1px, transparent 2px, transparent 4px);
 }
 
 .feature-image-circle {
