@@ -231,6 +231,7 @@ FEATURES SECTION
 }
 
 .feature-image {
+  display: inline-block;
   position: relative;
   z-index: 2;
   height: 177px;
@@ -241,6 +242,36 @@ FEATURES SECTION
   -webkit-box-shadow: 1px 2px 2px #D9D5D5;
   box-shadow: 1px 2px 2px #D9D5D5;
 }
+
+.feature-image1 {
+  background-image: url("../../images/audience-feature.png");
+}
+
+.feature-image2 {
+  background-image: url("../../images/persona-feature.png");
+}
+
+.feature-image3 {
+  background-image: url("../../images/engagement-feature.png");
+}
+
+.feature-image4 {
+  background-image: url("../../images/social-feature.png");
+}
+
+.feature-image5 {
+  background-image: url("../../images/sentiment-feature.png");
+}
+
+/* .feature-image-stripes {
+  background: -webkit-repeating-linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 10px,
+    rgba(0, 0, 0, 0.3) 10px,
+    rgba(0, 0, 0, 0.3) 20px
+  );
+} */
 
 .feature-image-border {
   border: 5px solid #fff;
