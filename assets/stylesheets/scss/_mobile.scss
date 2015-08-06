@@ -11,7 +11,6 @@ UNIVERSAL / BODY
 ==========================================*/
 
 .main-container {
-  @include outer-container(1200px);
 }
 
 img {max-width:100%;}
@@ -38,7 +37,6 @@ header {
   @include span-columns(12);
   height: 502px;
   background-image: url('../../images/header-background-min.png');
-  background-position: center;
   padding: 1em;
   background-size: auto 576px;
   background-position: 50% 100%;

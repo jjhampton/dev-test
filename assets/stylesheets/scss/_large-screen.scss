@@ -1,15 +1,15 @@
-@include media($desktop) {
+@include media($large-screen) {
 
   header {
     background-image: url('../../images/header-background.png');
-    background-position: 0% 100%;
+    background-position: 0% 44%;
     background-size: cover;
     height: 600px;
   }
 
   .hero-nav {
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 25em;
+    padding-right: 25em;
   }
 
   .hero-heading {
@@ -17,8 +17,8 @@
   }
 
   .hero-text {
-    padding-left: 24em;
-    padding-right: 24em;
+    padding-left: 45em;
+    padding-right: 45em;
   }
 
   .hero-nav-brand {
