@@ -1,0 +1,7 @@
+@import "../../../bower_components/neat/app/assets/stylesheets/_neat-helpers";
+
+$mobile: new-breakpoint(max-width 549px);
+$tablet: new-breakpoint(min-width 550px max-width 799px);
+$laptop: new-breakpoint(min-width 800px max-width 1199px);
+$desktop: new-breakpoint(min-width 1200px max-width 1499px);
+$large-screen: new-breakpoint(min-width 1500px);
