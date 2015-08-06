@@ -72,7 +72,52 @@ img {
 HEADER
 ==========================================*/
 .hero-nav {
-  height: 30px; }
+  height: 30px;
+  padding-top: 1em; }
+
+.sticky-nav {
+  height: 60px; }
+
+.sticky-nav {
+  clear: both;
+  background: #2C2C2C;
+  padding-left: 2em;
+  padding-right: 2em; }
+
+.sticky-brand-container {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  vertical-align: middle; }
+
+.sticky-logo {
+  padding-right: 1em; }
+
+.sticky-logo,
+.sticky-nav-brand {
+  vertical-align: middle;
+  max-height: 33px; }
+
+.sticky-nav-button {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  float: right;
+  height: 20px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #F6941E;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 2em;
+  padding-right: 2em;
+  background: -webkit-linear-gradient(top left, #F6941E, #F44481);
+  background: -moz-linear-gradient(top left, #F6941E, #F44481);
+  background: -o-linear-gradient(top left, #F6941E, #F44481);
+  background: -ms-linear-gradient(top left, #F6941E, #F44481);
+  background: linear-gradient(to bottom right, #F6941E, #F44481); }
 
 .hero-nav-brand {
   display: none; }
@@ -83,17 +128,10 @@ HEADER
   padding-right: 1em; }
 
 header {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
   height: 502px;
   background-image: url("../../images/header-background-min.png");
-  padding: 1em;
   background-size: auto 576px;
   background-position: 50% 100%; }
-  header:last-child {
-    margin-right: 0; }
 
 .header-logo {
   display: block;
