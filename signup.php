@@ -18,10 +18,10 @@
     $data['errors']  = $errors;
   } else {
 
-    define('DB_NAME', 'a3278868_demo');
-    define('DB_USER', 'a3278868_demo');
+    define('DB_NAME', 'demo');
+    define('DB_USER', 'demodev');
     define('DB_PASSWORD', 'Tkcslg9J#iPX34Qv$0Jmp1@RA');
-    define('DB_HOST', 'mysql15.000webhost.com');
+    define('DB_HOST', 'localhost');
 
     $link = mysql_connect(DB_HOST, DB_USER, DB_PASSWORD);
 
