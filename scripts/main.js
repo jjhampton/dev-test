@@ -3,8 +3,42 @@
 
   $(document).ready(function() {
 
-    // process the form
-    $('form').submit(function(event) {
+    //reference credit: http://www.hongkiat.com/blog/css-sticky-position/
+    var stickyNavTop = 500;
+
+    var stickyNav = function(){
+      var scrollTop = $(window).scrollTop();
+
+      if (scrollTop > stickyNavTop) {
+        $('.sticky-nav').removeClass('hidden');
+        $('.sticky-nav').addClass('sticky');
+      } else {
+        $('.sticky-nav').addClass('hidden');
+        $('.sticky-nav').removeClass('sticky');
+      }
+    };
+
+    stickyNav();
+
+    $(window).scroll(function() {
+        stickyNav();
+    });
+
+    // event handlers to scroll to top of page when clicking stick nav button or logo
+    $('.sticky-nav-button').on('click', function() {
+      $('body').scrollTop(0);
+    });
+
+    $('.sticky-logo').on('click', function() {
+      $('body').scrollTop(0);
+    });
+
+    $('.sticky-nav-brand').on('click', function() {
+      $('body').scrollTop(0);
+    });
+
+    // event handler to process the form
+    $('invite-form').submit(function(event) {
 
         // get form data
         var formData = {

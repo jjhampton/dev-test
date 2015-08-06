@@ -28,19 +28,27 @@ HEADER
   padding-top: 1em;
 }
 
-.sticky-nav {
-  height: 60px;
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
 }
 
+
 .sticky-nav {
+  height: 60px;
   clear: both;
   background: $sticky-nav-gray;
+  text-align: center;
   padding-left: 2em;
   padding-right: 2em;
 }
 
 .sticky-brand-container {
-  display: inline-block;
+  display: block;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -58,10 +66,11 @@ HEADER
 }
 
 .sticky-nav-button {
+  margin: 0 auto;
+  display: none;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  float: right;
   height: 20px;
   border-radius: 4px;
   color: #fff;
