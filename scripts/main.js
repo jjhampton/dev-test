@@ -11,9 +11,11 @@
 
       if (scrollTop > stickyNavTop) {
         $('.sticky-nav').removeClass('hidden');
+        $('.sticky-nav').addClass('slideInDown');
         $('.sticky-nav').addClass('sticky');
       } else {
         $('.sticky-nav').addClass('hidden');
+        $('.sticky-nav').removeClass('slideInDown');
         $('.sticky-nav').removeClass('sticky');
       }
     };

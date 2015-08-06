@@ -28,16 +28,6 @@ HEADER
   padding-top: 1em;
 }
 
-.sticky {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0;
-  z-index: 100;
-  border-top: 0;
-}
-
-
 .sticky-nav {
   height: 60px;
   clear: both;
@@ -45,6 +35,17 @@ HEADER
   text-align: center;
   padding-left: 2em;
   padding-right: 2em;
+  display: none;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+  display: block;
 }
 
 .sticky-brand-container {
