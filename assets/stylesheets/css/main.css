@@ -48,6 +48,9 @@ COLORS
 ==========================================*/
 /*feature-headers & footer-headers*/
 /* may need for bold text? or social icons */
+/*==========================================
+FONTS
+==========================================*/
 html {
   box-sizing: border-box; }
 
@@ -161,6 +164,7 @@ header {
   color: #fff;
   text-align: center;
   font-size: 2em;
+  font-family: "adelle", Helvetica, sans-serif;
   margin-bottom: 0.5em; }
 
 .hero-text {
