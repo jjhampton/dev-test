@@ -44,7 +44,7 @@
     }
     else {
       $data['success'] = true;
-      $data['message'] = 'Success!';
+      $data['message'] = 'Thanks for your request!';
       mysql_close();
     }
   }

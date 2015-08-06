@@ -65,6 +65,9 @@ UNIVERSAL / BODY
 img {
   max-width: 100%; }
 
+.hidden {
+  display: none; }
+
 /*==========================================
 HEADER
 ==========================================*/
@@ -160,6 +163,11 @@ header {
   background: -o-linear-gradient(top left, #F6941E, #F44481);
   background: -ms-linear-gradient(top left, #F6941E, #F44481);
   background: linear-gradient(to bottom right, #F6941E, #F44481); }
+
+.invite-success {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase; }
 
 /*==========================================
 FEATURES SECTION

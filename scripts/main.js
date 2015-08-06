@@ -19,7 +19,10 @@
         }).then(function(data) {
           console.log(data);
           // here we will handle errors and validation messages
-          $('form').append('<div class="alert alert-success">' + data.message + '</div>');
+          if (data.success) {
+          $('.invite-form').after('<div class="invite-success">' + data.message + '</div>');
+          $('.invite-button').addClass('hidden');
+          }
         });
 
         // prevent page refresh on form submit

@@ -15,6 +15,10 @@ UNIVERSAL / BODY
 
 img {max-width:100%;}
 
+.hidden {
+  display: none;
+}
+
 /*==========================================
 HEADER
 ==========================================*/
@@ -116,6 +120,12 @@ header {
   background:      -o-linear-gradient(top left, $button-orange, $button-gradient-pink);
   background:     -ms-linear-gradient(top left, $button-orange, $button-gradient-pink);
   background:         linear-gradient(to bottom right, $button-orange, $button-gradient-pink);
+}
+
+.invite-success {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /*==========================================
