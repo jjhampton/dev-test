@@ -1,35 +1,56 @@
 <?php
-// Check that user sent some data to begin with.
-if (isset($_REQUEST['email'])) {
 
-    $email = filter_var($_REQUEST['email'], FILTER_SANITIZE_EMAIL);
+  $errors = array(); // array to hold validation errors
+  $data = array(); // array to pass back data
 
-} else {
-    die('User did not send any data to be saved!');
-}
+  // Check that user sent some data to begin with.
+  if (empty($_POST['email'])) {
+    $errors['email'] = 'Email is required.';
+  }
+  else {
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+  }
 
-echo $email;
-// Define MySQL connection and credentials
-$pdo_dsn='mysql:dbname=yourdatabase;host=databasehost.example.com';
-$pdo_user='yourdatabaseuser';
-$pdo_password='yourdatabaspassword';
+  // if there are any errors in our errors array, return a success boolean of false
+  if ( ! empty($errors)) {
+    $data['success'] = false;
+    // if there are items in our errors array, return those errors
+    $data['errors']  = $errors;
+  } else {
 
-try {
-    // Establish connection to database
-    $conn = new PDO($pdo_dsn, $pdo_user, $pdo_password);
+    define('DB_NAME', 'a3278868_demo');
+    define('DB_USER', 'a3278868_demo');
+    define('DB_PASSWORD', 'Tkcslg9J#iPX34Qv$0Jmp1@RA');
+    define('DB_HOST', 'mysql15.000webhost.com');
 
-    // Throw exceptions in case of error.
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $link = mysql_connect(DB_HOST, DB_USER, DB_PASSWORD);
 
-    // Use prepared statements to mitigate SQL injection attacks.
-    // See http://stackoverflow.com/questions/60174/how-can-i-prevent-sql-injection-in-php for more details
-    $qry=$conn->prepare('INSERT INTO yourtable (yourcolumn) VALUES (:yourvalue)');
+    if (!link) {
+      die('Could not connect: ' .mysql_error());
+    }
 
-    // Execute the prepared statement using user supplied data.
-    $qry->execute(Array(":yourvalue" => $yourfield));
+    $db_selected = mysql_select_db(DB_NAME, $link);
 
-} catch (PDOException $e) {
-    echo 'Error: ' . $e->getMessage() . " file: " . $e->getFile() . " line: " . $e->getLine();
-    exit;
-}
+    if(!$db_selected) {
+      die('Can\'t use ' . DB_NAME . ': ' .mysql_error());
+    }
+
+    // echo 'Connected successfully';
+
+    $sql = "INSERT INTO invite (email) VALUES ('$email')";
+
+    if (!mysql_query($sql)) {
+      die('Error: ' . mysql_error());
+    }
+
+    mysql_close();
+
+    $data['success'] = true;
+    $data['message'] = 'Success!';
+
+  }
+
+  // return all our data to an AJAX call
+  echo json_encode($data);
+
 ?>
