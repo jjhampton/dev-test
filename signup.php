@@ -16,8 +16,8 @@
     $data['success'] = false;
     // if there are items in our errors array, return those errors
     $data['errors']  = $errors;
-  } else {
-
+  }
+  else {
     define('DB_NAME', 'demo');
     define('DB_USER', 'demodev');
     define('DB_PASSWORD', 'Tkcslg9J#iPX34Qv$0Jmp1@RA');
@@ -26,28 +26,27 @@
     $link = mysql_connect(DB_HOST, DB_USER, DB_PASSWORD);
 
     if (!link) {
-      die('Could not connect: ' .mysql_error());
+      $data['errors'] = 'Could not connect: ' .mysql_error();
     }
 
     $db_selected = mysql_select_db(DB_NAME, $link);
 
     if(!$db_selected) {
-      die('Can\'t use ' . DB_NAME . ': ' .mysql_error());
+      $data['errors'] = 'Can\'t use ' . DB_NAME . ': ' .mysql_error();
     }
-
-    // echo 'Connected successfully';
 
     $sql = "INSERT INTO invite (email) VALUES ('$email')";
 
     if (!mysql_query($sql)) {
-      die('Error: ' . mysql_error());
+      $data['success'] = false;
+      $data['errors'] = 'Error: ' . mysql_error();
+      mysql_close();
     }
-
-    mysql_close();
-
-    $data['success'] = true;
-    $data['message'] = 'Success!';
-
+    else {
+      $data['success'] = true;
+      $data['message'] = 'Success!';
+      mysql_close();
+    }
   }
 
   // return all our data to an AJAX call
