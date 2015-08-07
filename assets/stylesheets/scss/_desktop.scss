@@ -1,0 +1,96 @@
+@include media($desktop) {
+
+  .sticky-nav {
+    text-align: left;
+  }
+
+  .sticky-nav-button {
+    float: right;
+    display: inline-block;
+  }
+
+  .sticky-brand-container {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    vertical-align: middle;
+  }
+
+  header {
+    background-image: url('../../images/header-background.png');
+    background-position: 0% 100%;
+    background-size: cover;
+    height: 600px;
+  }
+
+  .hero-nav {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  .hero-heading {
+    font-size: 3em;
+  }
+
+  .hero-text {
+    padding-left: 24em;
+    padding-right: 24em;
+  }
+
+  .hero-nav-brand {
+    display: inline-block;
+  }
+
+  .header-logo-brand {
+    display: none;
+  }
+
+  .invite-form {
+    margin-left: 24em;
+    margin-right: 24em;
+  }
+
+  .features-section {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  footer {
+    padding-left: 1em;
+  }
+
+  .footer-social-icon {
+    padding-right: 0.7em;
+  }
+
+  .features-section {
+    padding-top: 2em;
+  }
+
+  .features-intro {
+    position: relative;
+    top: 5em;
+  }
+
+  .feature,
+  .features-intro {
+    @include span-columns(4 of 12);
+    @include omega(3n);
+  }
+
+  .footer-location-container {
+    @include span-columns(4 of 12);
+    @include omega(3n);
+  }
+
+  .footer-nav {
+    @include span-columns(2 of 4);
+    @include omega(2n);
+  }
+
+  .copyright-container {
+    @include span-columns(12 of 12);
+  }
+
+}

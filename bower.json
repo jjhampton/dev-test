@@ -1,0 +1,25 @@
+{
+  "name": "dev-test",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jjhampton/dev-test",
+  "authors": [
+    "John Hampton <john_j_hampton@yahoo.com>"
+  ],
+  "description": "dev-test",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "neat": "~1.7.2",
+    "bourbon": "~4.2.3",
+    "reset-css": "~2.0.2011012602",
+    "font-awesome": "~4.4.0",
+    "jquery": "~2.1.4",
+    "uikit": "~2.21.0"
+  }
+}
