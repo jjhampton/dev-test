@@ -138,7 +138,9 @@ HEADER
 .hero-nav-options {
   float: right;
   color: #FB2C59;
-  padding-right: 1em; }
+  padding-right: 1em;
+  font-family: "nimbus-sans", sans-serif;
+  font-size: 0.7em; }
 
 header {
   height: 502px;
@@ -164,13 +166,18 @@ header {
   color: #fff;
   text-align: center;
   font-size: 2em;
-  font-family: "adelle", Helvetica, sans-serif;
+  font-family: "adelle-light";
   margin-bottom: 0.5em; }
 
 .hero-text {
   color: #fff;
   text-align: center;
-  margin-bottom: 3em; }
+  margin-bottom: 3em;
+  font-family: sans-serif;
+  line-height: 1.5em;
+  font-size: 0.8em;
+  font-weight: 100;
+  letter-spacing: 1px; }
 
 .invite-heading {
   color: #fff;
@@ -179,20 +186,25 @@ header {
 .invite-text {
   color: #fff;
   text-transform: uppercase;
-  font-size: 0.8em;
-  text-align: center; }
+  font-size: 0.7em;
+  text-align: center;
+  font-family: sans-serif;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  font-weight: 100; }
 
 .invite-text-last {
   margin-bottom: 1.7em; }
 
 .invite-form {
   background-color: #fff;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 1em;
+  margin-right: 1em;
   padding: 0.3em; }
 
 .invite-input {
-  font-size: 0.8em;
+  font-size: 1em;
+  font-style: italic;
   height: 40px;
   border: none;
   padding-left: 1em;
@@ -204,11 +216,11 @@ header {
   max-width: 40%;
   height: 40px;
   border-radius: 4px;
-  color: #fff;
+  color: #E3E3E3;
   background-color: #F6941E;
   border: none;
   text-transform: uppercase;
-  font-weight: bold;
+  font-size: 0.8em;
   padding-left: 2em;
   padding-right: 2em;
   background: -webkit-linear-gradient(top left, #F6941E, #F44481);
@@ -240,7 +252,8 @@ FEATURES SECTION
   padding: 1em; }
 
 .features-intro-heading {
-  color: #420B4D;
+  color: #420050;
+  font-family: "adelle-light";
   font-size: 3em;
   margin-top: 0.5em;
   margin-bottom: 0.5em; }
@@ -248,13 +261,17 @@ FEATURES SECTION
 .features-intro-text,
 .feature-text-container {
   color: #848484;
-  background-color: #EBEBEB; }
+  background-color: #EBEBEB;
+  font-family: "adelle-light";
+  font-weight: 100; }
 
 .features-intro-text {
   font-style: italic;
   line-height: 1.2em; }
 
 .feature-text {
+  font-family: sans-serif;
+  font-size: 0.9em;
   line-height: 1.2em; }
 
 .feature-image-container {
@@ -301,7 +318,10 @@ FEATURES SECTION
   position: relative;
   top: 40%;
   display: none;
-  color: #fff; }
+  color: #fff;
+  font-family: sans-serif;
+  line-height: 1.2em;
+  letter-spacing: 1px; }
 
 .feature-image-stripes:hover > span.hover-text {
   display: inline; }
@@ -350,23 +370,29 @@ footer {
 
 .location-heading {
   color: #DF2973;
+  font-family: sans-serif;
   font-size: 1.2em;
+  font-weight: 100;
   margin-bottom: 0.7em; }
 
 .location-text {
+  font-family: sans-serif;
   font-size: 1em;
-  line-height: 1.2em; }
+  line-height: 1.2em;
+  font-weight: 100; }
 
 .location-contact {
   margin-top: 1em;
+  font-family: sans-serif;
   font-size: 0.8em;
   font-weight: bold;
   text-transform: uppercase; }
 
 .footer-social-icon {
-  padding-right: 0.7em; }
+  padding-right: 0.2em; }
 
 .copyright {
+  font-family: sans-serif;
   font-size: 0.8em;
   padding-left: 2em;
   padding-right: 2em; }
@@ -516,6 +542,8 @@ footer {
     padding-right: 2em; }
   footer {
     padding-left: 1em; }
+  .footer-social-icon {
+    padding-right: 0.7em; }
   .features-section {
     padding-top: 2em; }
   .features-intro {
@@ -604,6 +632,8 @@ footer {
   footer {
     padding-left: 25em;
     padding-right: 25em; }
+  .footer-social-icon {
+    padding-right: 0.7em; }
   .features-section {
     padding-top: 2em;
     padding-left: 25em;
