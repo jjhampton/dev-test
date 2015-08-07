@@ -230,9 +230,12 @@ header {
   background: linear-gradient(to bottom right, #F6941E, #F44481); }
 
 .invite-success {
+  margin-top: 1em;
   color: #fff;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-family: sans-serif; }
 
 /*==========================================
 FEATURES SECTION

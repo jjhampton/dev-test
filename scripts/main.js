@@ -40,7 +40,7 @@
     });
 
     // event handler to process the form
-    $('invite-form').submit(function(event) {
+    $('.invite-form').submit(function(event) {
 
         // get form data
         var formData = {
@@ -56,6 +56,7 @@
           // here we will handle errors and validation messages
           if (data.success) {
           $('.invite-form').after('<div class="invite-success">' + data.message + '</div>');
+          $('.invite-input').val("");
           $('.invite-button').addClass('hidden');
           }
         });
